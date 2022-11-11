@@ -1,6 +1,6 @@
 var arr = [];
 for (let i = 0; i < 5; i++) {
-  let num = prompt("Enter a number");
+  let num = prompt(`Enter a number (${5 - i} remaining)`);
   num = Number.parseInt(num);
   arr.push(num);
 }
