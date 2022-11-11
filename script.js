@@ -1,12 +1,14 @@
-let arr = [];
+var arr = [];
 for (let i = 0; i < 5; i++) {
   let num = prompt("Enter a number");
+  num = Number.parseInt(num);
   arr.push(num);
 }
-let max = arr[0];
-for (let i = 1; i < arr.length; i++) {
-  if (arr[i] > max) {
-    max = arr[i];
+var max = arr[0];
+arr.forEach((elem) => {
+  if (elem > max) {
+    max = elem;
   }
-}
+});
+
 alert(`The largest number from ${arr} is ${max}`);
